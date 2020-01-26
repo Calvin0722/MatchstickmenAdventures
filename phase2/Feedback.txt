@@ -1,0 +1,44 @@
+Dear group_0540
+
+This semester, we talked about MVP, the Model-View-Presenter architecture. It has many advantages, particularly when working with Android. As you can see from your project, your activity classes have methods that are specific to Android. If you encapsulate the rest of your code sufficiently, it is possible to port it to another platform simply by creating a new UI (for example, a website).
+
+Encapsulation can take on many forms. You can package your View classes together. You can ensure that your dependencies go one-way, towards the inner more abstract layers. You can incorporate SOLID principles as much as possible and design patterns where they make sense.
+Here is feedback that is specific to your project:
+
+You made good use of…
+
+The use of object oriented design was very good, they had a clear understanding of MVP, clean architecture, dependency injection and factory pattern. The team made many really extensive improvements from phase 1 in order to have such clean code, and the complexity of the design makes this an even bigger feat. They demonstrated how easy it is to add features to their code, such as a new type of asteroid, and it was clear that changes like this would be localized. I think design-wise they really aced it, and even when their clean architecture was questioned, they understood the problem and put forth a possible solution. 
+
+Where Javadoc existed (it did in most places), it was very clear and consistent, properly describing what the code does and not how it does it. Code was always easy to read and understand, and methods were kept at a suitable length with good helper methods. I didn't see any troublesome classes, I got the impression that they were properly using design patterns to keep class sizes small, and with single responsibilities.
+
+It's clear that you learned a lot from p1 to p2, and you told the story well. The intro was a bit long — you each spoke for a couple minutes about the design without showing any code or UML, and you could have both shortened and improved the presentation by showing specific examples as you described your learning.
+
+Your asteroid game was so cool! And it had a rudimentary AI! You describe very well 
+
+You two-player mode was nicely done.
+
+Asteroids programmed from scratch. Physics151 had Riemann sum integration technique that they used to figure out, for example, the bitmap rotation.
+
+The user sees…
+
+The game looks very nice, it is very complex and they have put a lot of work into both the design of the front end and the design of their code. The user is able to personalize the game style as well as pause, replay, restart, and view a scoreboard. Additionally, there can be multiple players and different levels of difficulty. There UX was pretty incredible, and I really think they went above and beyond in this aspect of the project. The object movements were perfectly smooth and I could not see any glitches in their demo. Implementing an AI NPC was a really cool extra feature that I think makes this game very professional play-wise.
+
+A good next step would be to…
+
+In some places Javadocs were missing in both the superclass and the child class (WeaponSystem and/or Autocannon), and therefore someone reading the code will not know what the method does. Encapsulation was lacking in some areas, as there were public variables in a superclass that were inherited by child class. This was not widespread, but it is still a pretty major issue. There were no inline comments, but they used great naming conventions and I would argue that additional comments were not needed where Javadoc existed. The real issue here is when there is no Javadoc nor inline comments, and someone reading the code has to guess (or spend time figuring out) what it does.
+
+Rethink your packages.
+
+There were a few longer method signatures, such as in ProjectileLauncherFactory There were also some mildly messy looking code segments, such as a medium-lengthy case/switch in one class (unfortunately I didn't note the place :( ). Also, their Asteroid package was really massive and probably could have benefited from a more concise package structure. These three problems really weren't too bad, and could probably be justified by the team.
+
+My only problem with the presentation was that it was very focused on improvements from phase 1, and less so on the code of phase 2. However, I think that it was well organized and I actually benefited from hearing about their improvements so I could know what to look for in their code.
+
+You made good use of the MVP architecture! The one place that needed DI was in the file saving, where a controller directly created a file. Your team was able to clearly describe what would be needed to fix it, including introducing an interface that a file saver class would implement, and you were able to figure out which Clean Architecture layer the various pieces belonged to.
+
+Work on the login system to encrypt the passwords.
+
+We hope that you enjoyed working on this project and found it a useful learning experience.
+
+Cheers,
+The CSC207 Instructional Team
+
